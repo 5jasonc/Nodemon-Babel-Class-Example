@@ -6,7 +6,7 @@ const respondJSON = (request, response, status, object) => {
 
 const success = (request, response) => {
   const responseJSON = {
-    message: 'This is a successful response',
+    message: 'This is a successful response!!!',
   };
 
   respondJSON(request, response, 200, responseJSON);
@@ -14,7 +14,7 @@ const success = (request, response) => {
 
 const badRequest = (request, response, params) => {
   const responseJSON = {
-    message: 'This request has the required parameters',
+    message: 'This request has the required parameters!!!',
   };
 
   if (!params.valid || params.valid !== 'true') {
